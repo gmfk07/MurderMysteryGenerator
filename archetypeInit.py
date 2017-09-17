@@ -177,32 +177,32 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         counter += 1
           
         # Promiscuous
-        s = '"'+"Oh dear… I believe with all my heart that I saw weapon!"+'"'+"XXX"+'"'+"I also found item."+'"'
+        s = "Oh dear… I believe with all my heart that I saw weapon!XXXI also found item."
         mapQ1[counter][0] = s
         
         #Anxious
-        s = '"'+"Look, I was just passing by. I don’t know anything else. There might have been weapon on the ground. It definitely wasn’t mine."+'"'+"XXX"+'"'+"I also think I saw item."+'"'
+        s = "Look, I was just passing by. I don’t know anything else. There might have been weapon on the ground. It definitely wasn’t mine.XXXI also think I saw item."
         mapQ1[counter][1] = s
         
         #Lethargic
-        s = '"'+"Let me see if I can remember what I saw… Maybe weapon?"+'"'+"XXX"+'"'+"Maybe item? I don’t know…"+'"'
+        s = "Let me see if I can remember what I saw… Maybe weapon?XXXMaybe item? I don’t know…"
         mapQ1[counter][2] = s
         
-        #DimWit
-        s = '"'+"‘Round the body, I saw weapon."+'"'+"XXX"+'"'+"And wouldn’t cha know it, I also found item."+'"'
+        #DimWi
+        s = "‘Round the body, I saw weapon.XXXAnd wouldn’t cha know it, I also found item."
         mapQ1[counter][3] = s
         
         #Narc
         if counter == 5:
-           s = '"'+"Well I was preoccupied with checking my phone for messages- I mean working, but I did see something that looked like weapon."+'"'+"XXX"+'"'+"I also saw something that looks like item." +'"'
+           s = "Well I was preoccupied with checking my phone for messages- I mean working, but I did see something that looked like weapon.XXXI also saw something that looks like item."
         elif counter == 8:
-           s = '"'+"Well I was preoccupied with my phone, but I did see something that looked like weapon.XXXI also saw something that looks like item." +'"'
+           s = "Well I was preoccupied with my phone, but I did see something that looked like weapon.XXXI also saw something that looks like item."
         elif counter == 9:
-           s = '"'+"Well I was preoccupied with my phone, but I did see something that looked like weapon.XXXI also saw something that looks like item." +'"'
+           s = "Well I was preoccupied with my phone, but I did see something that looked like weapon.XXXI also saw something that looks like item."
         elif counter == 12:
-           s = '"'+"Well I was swiping through my phone, but I did see something that looked like weapon.XXXI also saw something that looks like item." +'"'
+           s = "Well I was swiping through my phone, but I did see something that looked like weapon.XXXI also saw something that looks like item."
         else:
-            s = '"'+"Well I spent most of the time checking my phone for messages, it never stops ringing sometimes, but I did see something that looked like weapon.XXXI also saw something that looks like item." +'"'
+            s = "Well I spent most of the time checking my phone for messages, it never stops ringing sometimes, but I did see something that looked like weapon.XXXI also saw something that looks like item."
         mapQ1[counter][4] = s
         
     counter = -1
