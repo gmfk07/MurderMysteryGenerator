@@ -14,9 +14,10 @@ h = 16
 mapJobs = [["" for x in range(w)] for y in range(h)] 
 mapQ1 = [["" for x in range(w)] for y in range(h)] 
 mapQ2 = [["" for x in range(w)] for y in range(h)] 
+mapArchetype = [[""for x in range(w)] for y in range(w)]
 
 #Populate mapJobs
-archetypeInit.archetypeInit(mapJobs, mapQ1)
+archetypeInit.archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype)
 
 #mapQ3 = [[0 for x in range(w)] for y in range(h)] 
 class victim():
@@ -42,11 +43,12 @@ class victim():
         return self.gender
 
 class suspect():
-    def __init__(self, name, archetype, job, gender):
+    def __init__(self, name, archetype, job, gender, timeFound):
         self.name = name
         self.archetype = archetype
         self.job = job
         self.gender = gender
+        self.timeFound = timeFound
     def getName(self):
         return self.name
     def getArchetype(self):
@@ -55,13 +57,18 @@ class suspect():
         return self.job
     def getGender(self):
         return self.gender
+    def getTime(self):
+        return self.timeFound
     
 def genSuspect():
     name = genName()
     archetype = 3 #random.randint(0,w-1)
     job = jobList.pop(random.randint(0,len(jobList)-1))
     gender = random.choice(("M","F"))
-    return suspect(name, archetype, job, gender)
+    timeFound = murderHour + random.randint(1,3)
+    if timeFound > 12:
+        timeFound -= 12
+    return suspect(name, archetype, job, gender, timeFound)
     
 def genName():
     return "Andrew Hoyt"
@@ -70,8 +77,8 @@ mts = "January", "February", "March", "April", "May", "June", "July", "August", 
 month = random.choice(mts)
 day = random.randint(1,28)
 #MurderTime
-murderHour = random.choice((11,12,1,2,3,4))
-if murderHour > 10:
+murderHour = random.choice((11,12,1,2))
+if murderHour > 11:
     murderTOD = "pm"
 else:
     murderTOD = "am"
@@ -100,4 +107,4 @@ suspects = [genSuspect(),genSuspect(),genSuspect(),genSuspect()]
 daysLeft = 3
 
 intro.intro(murderVictim, month, day, murderWeapon, murderLocation, murderHour, murderTOD)
-routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2, murderWeapon)
+routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim)
