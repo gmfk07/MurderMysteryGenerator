@@ -135,7 +135,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         s = "‘Round the body, I saw weapon.XXX And wouldn’t cha know it, I also found item."
         mapQ1[counter][3] = s
         
-         if counter == 5:
+        if counter == 5:
            s = "Well I was preoccupied with checking my phone for messages- I mean working, but I did see something that looked like weapon.XXX I also saw something that looks like item."  
         elif counter == 8:
            s = "Well I was preoccupied with my phone, but I did see something that looked like weapon.XXX I also saw something that looks like item."
@@ -152,7 +152,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         counter += 1
         
         if counter == 6:
-            s = "Nobody else was there... XXXI think I saw a man/woman that was about age years old... archetype but they dashed off before I could get a good look...
+            s = "Nobody else was there... XXXI think I saw a man/woman that was about age years old... archetype but they dashed off before I could get a good look..."
         if counter == 9:
             s = "Nobody else was there... XXXI think I saw a man/woman walking down the hallway... archetype but I didn’t really get a good look…"
         else:
@@ -163,13 +163,13 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         s = "There wasn’t noone else with me, just me and the body.XXX There was someone else there with me… they archetype. I’m purdy sure they were a gender."
         mapQ2[counter][3] = s
         
-         if counter == 6:
+        if counter == 6:
             s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman... archetype Anyways, I got distracted and they managed to sneak away."
-         elif counter == 8:
+        elif counter == 8:
             s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman in the hallway...archetype" 
-         elif counter == 9:
+        elif counter == 9:
             s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman in the hallway...archetype"
-         else:
+        else:
             s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman... archetype"
         mapQ2[counter][4] = s
     
@@ -177,7 +177,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     for i in mapArchetype:
         counter += 1
         
-        mapArchtype[counter][2] = lethargicA[counter]
+        mapArchetype[counter][2] = lethargicA[counter]
         mapArchetype[counter][3] = dimwitA[counter]
         mapArchetype[counter][4] = narcA[counter]
         
