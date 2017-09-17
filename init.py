@@ -4,17 +4,21 @@ Created on Sat Sep 16 12:04:14 2017
 
 @author: gmfk07
 """
-import random, intro, routine
+import random, intro, routine, archetypeInit
 #Randomize values
 random.seed()
 
-# Creates a list containing 5 lists, each of 8 items, all set to 0
-w, h = 6, 16;
-mapJobs = [[0 for x in range(w)] for y in range(h)] 
-mapQ1 = [[0 for x in range(w)] for y in range(h)] 
-mapQ2 = [[0 for x in range(w)] for y in range(h)] 
-#mapQ3 = [[0 for x in range(w)] for y in range(h)] 
+# Creates a list containing 6 lists, each of 16 items, all set to ""
+w = 6
+h = 16
+mapJobs = [["" for x in range(w)] for y in range(h)] 
+mapQ1 = [["" for x in range(w)] for y in range(h)] 
+mapQ2 = [["" for x in range(w)] for y in range(h)] 
 
+#Populate mapJobs
+archetypeInit.archetypeInit(mapJobs)
+
+#mapQ3 = [[0 for x in range(w)] for y in range(h)] 
 class victim():
     def __init__(self, name, trait1, trait2, age, gender):
         self.name = name
@@ -42,6 +46,7 @@ class suspect():
         self.name = name
         self.archetype = archetype
         self.job = job
+        self.gender = gender
     def getName(self):
         return self.name
     def getArchetype(self):
@@ -54,13 +59,12 @@ class suspect():
 def genSuspect():
     name = genName()
     archetype = random.randint(0,w-1)
-    job = random.randint(0, h-1)
+    job = jobList.pop(random.randint(0,len(jobList)-1))
     gender = random.choice(("M","F"))
     return suspect(name, archetype, job, gender)
     
 def genName():
     return "Andrew Hoyt"
-    
 #Day
 mts = "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
 month = random.choice(mts)
@@ -78,6 +82,15 @@ t2 = random.choice(("friend", "boss child", "good"))
 age = random.randint(23,42)
 murderVictim = victim("Andrew Hoyt", t1, t2, age, "M")
 murderLocation = random.choice(("alleyway", "warehouse", "hotel room", "house"))
+#Job tracking
+modifier = 0
+if murderLocation == "warehouse":
+    modifier += 4
+if murderLocation == "hotel room":
+    modifier += 8
+if murderLocation == "house":
+    modifier += 12
+jobList = [modifier, modifier+1, modifier+2, modifier+3]
 #Complications/plot twists
 complicationCount = 2;
 complications = ("wrong weapon", "wrong location", "wrong identity", "missing evidence", "planted evidence", "suspect gone")
@@ -87,4 +100,4 @@ suspects = [genSuspect(),genSuspect(),genSuspect(),genSuspect()]
 daysLeft = 3
 
 intro.intro(murderVictim, month, day, murderWeapon, murderLocation, murderHour, murderTOD)
-routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3])
+routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2)
