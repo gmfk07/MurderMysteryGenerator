@@ -17,7 +17,7 @@ def whatDo(daysLeft, suspect1, suspect2, suspect3, suspect4, mapJobs, mapQ1, map
     
     while True:
         try:
-            x = int(input("Enter a number 1-5: "))
+            x = int(input("Enter a number 1-4: "))
             if x > 5 or x < 1:
                 raise ValueError
             else:
@@ -103,9 +103,9 @@ def question(suspect, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderV
             
         line2 = line2.replace("weapon", weapon)
         if extraitem == "" or murderer == suspect:
-            line2 = line2.partition("XXX")[0]
+            line2 = '"' + line2.partition("XXX")[0] + '"'
         else:
-            line2 = line2.partition("XXX")[0] + line2.partition("XXX")[2]
+            line2 = '"' + line2.partition("XXX")[0] + line2.partition("XXX")[2] + '"'
             line2 = line2.replace("item", extraitem)
         print(line2)
         
