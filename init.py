@@ -96,7 +96,7 @@ while True:
     t1 = random.choice(("rich", "politician", "average"))
     t2 = random.choice(("friend", "boss child", "good"))
     age = random.randint(23,42)
-    murderVictim = victim(genName(), t1, t2, age, "M")
+    murderVictim = victim(genName(), t1, t2, age, random.choice(("F", "M")))
     murderLocation = random.choice(("alleyway", "warehouse", "hotel room", "house"))
     #Job tracking
     modifier = 0

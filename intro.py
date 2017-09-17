@@ -11,6 +11,12 @@ def intro(victim, month, day, murderWeapon, murderLocation, murderHour, murderTO
     t1 = victim.getTrait1()
     t2 = victim.getTrait2()
     age = victim.getAge()
+    gender = victim.getGender()
+    
+    if gender == "M":
+        title = "Mr."
+    if gender == "F":
+        title = "Mrs."
     
     if t1 == "rich":
         t1line = "rather wealthy."
@@ -47,6 +53,6 @@ def intro(victim, month, day, murderWeapon, murderLocation, murderHour, murderTO
         mline = "the victim’s own house."
     
     print ("This city is " + random.choice(("crime-ridden", "dark")) + " and " + random.choice(("brutal", "seedy")) + " and you " + random.choice(("love it", "hate it", "got used to it")) + ".")
-    print ("You got your most recent case handed to you unceremoniously - solving the murder of " + name + ". " + t2line)
+    print ("You got your most recent case handed to you unceremoniously - solving the murder of " + title + " " + name + ". " + t2line)
     print ("On " + month + " " + str(day) + " at " + str(murderHour) + " " + murderTOD + ", " + name + " was murdered, and the autopsy report suggests they were " + mword + ". At the time of their death, they were " + str(age) + " and " + t1line + " The crime scene is " + mline)
     print ("Nothing left to do now but solve the case and then " + random.choice(("go on that vacation you’ve always wanted", "retire", "go back to work next week")) + ".")
