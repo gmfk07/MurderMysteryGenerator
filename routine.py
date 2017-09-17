@@ -59,7 +59,7 @@ def question(suspect, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderV
         else:
             culpritGender = "WOMAN"
         line2 = "*squawk* *squawk* *squawk* *squawk* Oh why there was weapon and a "+culpritGender.lower()+" *squawk*"
-        line3 = "XXX*SQUAWK* *SQUAWK* "+culpritGender+" *SQUAWK*"
+        line3 = "*SQUAWK* *SQUAWK* "+culpritGender+" *SQUAWK*XXX*SQUAWK* *SQUAWK* "+culpritGender+" *SQUAWK*"
 
     if suspect.getGender() == "M":
         suspectPronoun = "he"

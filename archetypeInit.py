@@ -23,9 +23,9 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     promiscuous[10] = "chatting up this handsome fellow by the front door, when I got a call reporting a terrible smell upstairs. I went up there and found victimName, and let me tell you hun, that corpse was not a pleasant sight."+'"'
     promiscuous[11] = "*squack*...*squack*...*squACK**SQUACK**man/woman**SQUACK**SQuack**squack*...*squack*..."+'"'
     promiscuous[12] = "cleaning victimName’s clothes when I saw him/her lying like a hot pancake on the floor."+'"'
-    promiscuous[13] = "doing my daily jiggle in front of the TV when I smelt that horrific smell. I broke into my neighbor’s house and found his/her cute body lying dead in front of his/her computer screen."+'"'
+    promiscuous[13] = "doing my daily jiggle in front of the TV when I smelt that horrific smell. I broke into my neighbor’s house and found his/her cute body lying dead."+'"'
     promiscuous[14] = "heading over to victimName’s house for our weekly... meeting... but turns out he/she died."+'"'
-    promiscuous[15] = "on my way back from the groceries and started preparing some asparagus for my love. Eventually, I… *sobs*... I found victimName lying on my bed naked… dead."+'"'
+    promiscuous[15] = "on my way back from the groceries and started preparing some asparagus for my love. Eventually, I… *sobs*... I found victimName lying on the floor… dead."+'"'
     
     anxious = [0 for x in range(amt)]
     anxious[0] = 'I wish I could help, but...I just don’t know anything. I go through there on my way home. As soon as I saw the body, I got spooked and ran."'

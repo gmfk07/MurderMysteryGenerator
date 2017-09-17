@@ -187,7 +187,7 @@ while True:
         target = suspects[3]
         
     if murderer == target:
-        print("You were exactly right; " + target.getName() + " confessed to murdering " + murderVictim.getName() + "in cold blood! Justice has been served, and the city is a little bit safer thanks to you.")
+        print("You were exactly right; " + target.getName() + " confessed to murdering " + murderVictim.getName() + " in cold blood! Justice has been served, and the city is a little bit safer thanks to you.")
     else:
         print("After a weeklong interrogation, it was ultimately proved that " + target.getName() + " could not have been the culprit - their alibi was airtight. By that point, all the other suspects had gone into hiding. The murderer still haunts the streets, and feeling useless, you threw away your badge the next day.")
         print("The real murderer was " + murderer.getName() + ".")
