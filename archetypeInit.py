@@ -20,7 +20,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     promiscuous[6] = "doing my late night shift when I saw a faint figure in the distance and upon investigation stumbled across a body."+'"'
     promiscuous[7] = "messing around with the forklift late at night when I saw a body."+'"'
     promiscuous[8] = "washing my body with some cleaning supplies because I thought I smelt bad when I realized there was a rotting corpse next door!"+'"'
-    promiscuous[9] = "knocking on the door of my neighbor to give him my daily… gift… when I found out [he/she] was dead. Shame."+'"'
+    promiscuous[9] = "knocking on the door of my neighbor to give him my daily… gift… when I found out he/she was dead. Shame."+'"'
     promiscuous[10] = "chatting up this handsome fellow by the front door, when I got a call reporting a terrible smell upstairs. I went up there and found victimName, and let me tell you hun, that corpse was not a pleasant sight."+'"'
     promiscuous[11] = "*squack*...*squack*...*squACK**SQUACK**man/woman**SQUACK**SQuack**squack*...*squack*..."+'"'
     promiscuous[12] = "cleaning victimName’s clothes when I saw him/her lying like a hot pancake on the floor."+'"'
@@ -104,7 +104,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     narc[12] = 'At about that time I was putting the baby down for a nap when I heard this absolutely horrendous screech. I walked upstairs to investigate and saw victimName on the ground! It was horrifying, dastardly! How dare they, with me- I mean the baby!"'
     narc[13] = 'At about that time I was  just relaxing on my front porch when I heard a noise from victimName’s house. I walked over to investigate like the good neighbor I am and found that the front door was unlocked. When I walked in, I saw victimName on the ground. I was horrifying!"'
     narc[14] = 'At about that time I was in town for the week and staying with victimName. I heard a loud noise and courageously walked downstairs to investigate when I saw victimName on the ground- simply horrendous!”'
-    narc[15] = 'At about that time I was I was relaxing in the living room when I heard a loud scream. I bravely walked towards the sound to investigate and I saw victimName on the ground. It was horrifying!”'
+    narc[15] = 'At about that time I was I was relaxing in the living room when I heard a loud scream. I bravely walked towards the sound to investigate and I saw my dear victimName on the ground. It was horrifying!”'
 
     #Adjectives to Describe Each Other
     promiscuousA = [0 for x in range(amt)]
@@ -161,11 +161,11 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         mapJobs[counter][1] = s +anxious[counter]
         
         #Lethargic
-        s = 'name walks into your office slowly, stopping to stretch and yawn. They blink around, dazed, until they eventually make their way to your desk. \n\n"Good afternoon... Why am I here again? Oh, right... the murder... Let’s see... It was around timeFound ... '
+        s = 'name walks into your office slowly, stopping to stretch and yawn. They blink around, dazed, until he/she eventually makes his/her way to your desk. \n\n"Good afternoon... Why am I here again? Oh, right... the murder... Let’s see... It was around timeFound ... '
         mapJobs[counter][2] = s + lethargic[counter]
         
         #DimWit
-        s = "A " + random.choice(("rather lanky", "stout", "twitching")) + " man/woman shuffles into your office, finding a seat quickly. \n\n“Heyyy,” says name, “howz’it goin?” \n\nYou tell them about your investigation and ask them about what they saw the night of the murder. They look at you without blinking for a few seconds, and just as you’re about to repeat yourself, they snap back into it. \n\n"
+        s = "A " + random.choice(("rather lanky", "stout", "twitching")) + " man/woman shuffles into your office, finding a seat quickly. \n\n“Heyyy,” says name, “howz’it goin?” \n\nChecking your case files, you see that they claim to have stumbled across the body right at timeFound. You tell them about your investigation and ask them about what they saw the night of the murder. They look at you without blinking for a few seconds, and just as you’re about to repeat yourself, they snap back into it. \n\n"
         mapJobs[counter][3] = s + dimwit[counter]
         
         #Narc
@@ -177,7 +177,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         counter += 1
           
         # Promiscuous
-        s = '"'+"Oh dear… I believe with all my heart that I saw a weapon!"+'"'+"XXX"+'"'+"I also found item."+'"'
+        s = '"'+"Oh dear… I believe with all my heart that I saw weapon!"+'"'+"XXX"+'"'+"I also found item."+'"'
         mapQ1[counter][0] = s
         
         #Anxious
@@ -185,7 +185,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         mapQ1[counter][1] = s
         
         #Lethargic
-        s = '"'+"Let me see if I can remember what I saw… Maybe a weapon?"+'"'+"XXX"+'"'+"Maybe an item? I don’t know…"+'"'
+        s = '"'+"Let me see if I can remember what I saw… Maybe weapon?"+'"'+"XXX"+'"'+"Maybe an item? I don’t know…"+'"'
         mapQ1[counter][2] = s
         
         #DimWit
@@ -227,7 +227,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         mapQ2[counter][2] = s
 
         #DimWit
-        s = '"'+"There wasn’t noone else with me, just me and the body."+'"'+"XXX"+'"'+"There was someone else there with me… they archetype. I’m purdy sure they were a gender."+'"'
+        s = '"'+"There wasn’t noone else with me, just me and the body."+'"'+"XXX"+'"'+"There was someone else there with me… they archetype. I’m purdy sure they were a man/woman."+'"'
         mapQ2[counter][3] = s
         
         #Narc

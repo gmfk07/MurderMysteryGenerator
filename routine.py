@@ -6,7 +6,7 @@ Created on Sat Sep 16 16:38:54 2017
 """
 import random
 
-def whatDo(daysLeft, suspect1, suspect2, suspect3, suspect4, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, currentItem):
+def whatDo(daysLeft, suspect1, suspect2, suspect3, suspect4, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, dictItem):
     print("\nYou have " + str(daysLeft) + " days left in your investigation.")
     print("What will you do today?")
     print("")
@@ -28,15 +28,15 @@ def whatDo(daysLeft, suspect1, suspect2, suspect3, suspect4, mapJobs, mapQ1, map
     suspects = [suspect1, suspect2, suspect3, suspect4]
     print("")
     if x == 1:
-        question(suspect1, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, suspects, currentItem)
+        question(suspect1, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, suspects, dictItem)
     if x == 2:
-        question(suspect2, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, suspects, currentItem)
+        question(suspect2, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, suspects, dictItem)
     if x == 3:
-        question(suspect3, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, suspects, currentItem)
+        question(suspect3, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, suspects, dictItem)
     if x == 4:
-        question(suspect4, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, suspects, currentItem)
+        question(suspect4, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, suspects, dictItem)
     
-def question(suspect, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, suspects, currentItem):
+def question(suspect, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, suspects, dictItem):
     arc = suspect.getArchetype()
     job = suspect.getJob()
     time = suspect.getTime()
@@ -88,7 +88,7 @@ def question(suspect, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderV
             print("Invalid number, try again.")
     
     if x == 1:
-        extraitem = ""
+        extraitem = dictItem[suspect.getTime()]
         
         if murderWeapon == "gun":
             weapon = "a gun"
@@ -102,10 +102,11 @@ def question(suspect, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderV
             weapon = "some rope"
             
         line2 = line2.replace("weapon", weapon)
-        if extraitem == "":
+        if extraitem == "" or murderer == suspect:
             line2 = line2.partition("XXX")[0]
         else:
             line2 = line2.partition("XXX")[0] + line2.partition("XXX")[2]
+            line2 = line2.replace("item", extraitem)
         print(line2)
         
     if x == 2:

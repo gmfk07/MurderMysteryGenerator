@@ -135,16 +135,15 @@ else:
 dictItem = {m1:initLeave, m2:initLeave, m3:initLeave, m4:initLeave} 
 
 for s in suspects:
-    if s != murderer and random.choice((True, False, False)):
+    if s != murderer and random.choice((True, True, False)):
         counter = 1
-        print("WHOOOOOP")
         while counter <= 3:
             tm = s.getTime() + counter - 1
-            print(tm)
+            if tm > 12:
+                tm -= 12
             if tm in dictItem:
                 if counter == 1:
                     firstOne = dictItem[tm]
-                    print('firstone ' + firstOne)
                 else:
                     if dictItem[tm] == firstOne:
                         dictItem[tm] = routine.leaveItem(s)
