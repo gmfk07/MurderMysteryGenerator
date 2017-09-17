@@ -115,12 +115,12 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     promiscuousA[5] = "was hot but too serious for my tast"
 
     anxiousA = [0 for x in range(amt)]
-    anxiousA[0] = "was se-sexy"
-    anxiousA[1] = "was even more nervous than me"
-    anxiousA[2] = "seemed to be quite slow"
-    anxiousA[3] = "was stupid looking"
-    anxiousA[4] = "looked like he had a huge ego"
-    anxiousA[5] = "was cold like a robot"
+    promiscuousA[0] = "was se-sexy"
+    promiscuousA[1] = "was even more nervous than me"
+    promiscuousA[2] = "seemed to be quite slow"
+    promiscuousA[3] = "was stupid looking"
+    promiscuousA[4] = "looked like he had a huge ego"
+    promiscuousA[5] = "was cold like a robot"
 
     dimwitA = [0 for x in range(amt)]
     dimwitA[0] = "looked really hot"
