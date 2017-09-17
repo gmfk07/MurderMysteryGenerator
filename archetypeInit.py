@@ -11,41 +11,41 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     amt = 16
     
     promiscuous = [0 for x in range(amt)]
-    promiscuous[0] = "walking home from the salon, when I found a body"
-    promiscuous[1] = "taking out the disgusting trash from my apartment when I smelt this rotting smell. When I went to investigate, I saw a body."
-    promiscuous[2] = "going for my nightly jog when I saw a body."
-    promiscuous[3] = "after a day of cleaning some clothes I saw a body."
-    promiscuous[4] = "getting ready to go home after a long day at the warehouse when I saw a body."
-    promiscuous[5] = "polishing my nails late at work when I saw a body."
-    promiscuous[6] = "doing my late night shift when I saw a faint figure in the distance and upon investigation stumbled across a body."
-    promiscuous[7] = "messing around with the forklift late at night when I saw a body."
-    promiscuous[8] = "washing my body with some cleaning supplies because I thought I smelt bad when I realized there was a rotting corpse next door!"
-    promiscuous[9] = "knocking on the door of my neighbor to give him my daily… gift… when I found out [he/she] was dead. Shame."
-    promiscuous[10] = "chatting up this handsome fellow by the front door, when I got a call reporting a terrible smell upstairs. I went up there and found victimName, and let me tell you hun, that corpse was not a pleasant sight."
-    promiscuous[11] = "*squack*...*squack*...*squACK**SQUACK**man/woman**SQUACK**SQuack**squack*...*squack*..."
-    promiscuous[12] = "cleaning victimName’s clothes when I saw him/her lying like a hot pancake on the floor."
-    promiscuous[13] = "doing my daily jiggle in front of the TV when I smelt that horrific smell. I broke into my neighbor’s house and found his/her cute body lying dead in front of his/her computer screen."
-    promiscuous[14] = "heading over to victimName’s house for our weekly... meeting... but turns out he/she died."
-    promiscuous[15] = "on my way back from the groceries and started preparing some asparagus for my love. Eventually, I… *sobs*... I found victimName lying on my bed naked… dead."
+    promiscuous[0] = "walking home from the salon, when I found a body"+'"'
+    promiscuous[1] = "taking out the disgusting trash from my apartment when I smelt this rotting smell. When I went to investigate, I saw a body."+'"'
+    promiscuous[2] = "going for my nightly jog when I saw a body."+'"'
+    promiscuous[3] = "after a day of cleaning some clothes I saw a body."+'"'
+    promiscuous[4] = "getting ready to go home after a long day at the warehouse when I saw a body."+'"'
+    promiscuous[5] = "polishing my nails late at work when I saw a body."+'"'
+    promiscuous[6] = "doing my late night shift when I saw a faint figure in the distance and upon investigation stumbled across a body."+'"'
+    promiscuous[7] = "messing around with the forklift late at night when I saw a body."+'"'
+    promiscuous[8] = "washing my body with some cleaning supplies because I thought I smelt bad when I realized there was a rotting corpse next door!"+'"'
+    promiscuous[9] = "knocking on the door of my neighbor to give him my daily… gift… when I found out [he/she] was dead. Shame."+'"'
+    promiscuous[10] = "chatting up this handsome fellow by the front door, when I got a call reporting a terrible smell upstairs. I went up there and found victimName, and let me tell you hun, that corpse was not a pleasant sight."+'"'
+    promiscuous[11] = "*squack*...*squack*...*squACK**SQUACK**man/woman**SQUACK**SQuack**squack*...*squack*..."+'"'
+    promiscuous[12] = "cleaning victimName’s clothes when I saw him/her lying like a hot pancake on the floor."+'"'
+    promiscuous[13] = "doing my daily jiggle in front of the TV when I smelt that horrific smell. I broke into my neighbor’s house and found his/her cute body lying dead in front of his/her computer screen."+'"'
+    promiscuous[14] = "heading over to victimName’s house for our weekly... meeting... but turns out he/she died."+'"'
+    promiscuous[15] = "on my way back from the groceries and started preparing some asparagus for my love. Eventually, I… *sobs*... I found victimName lying on my bed naked… dead."+'"'
     
     anxious = [0 for x in range(amt)]
-    anxious[0] = '"I wish I could help, but...I just don’t know anything. I go through there on my way home. As soon as I saw the body, I got spooked and ran."'
-    anxious[1] = '"Well, here’s all I know. I heard a noise outside my window, so I went to investigate. As soon as I saw the body, I got spooked and ran."'
-    anxious[2] = '"At about that time I was Walking around in the neighborhood. I was considering living here a couple years ago, but after I saw victimName lying on the ground, it’s clear I made the right choice!  Good thing I’m so good at home-searching…"'
-    anxious[3] = '"I wish I could help, but...look it’s got nothing to do with me. I keep my nose clean, alright? I can’t risk it. "'
-    anxious[4] = '"At about that time I was keeping tabs on my underlings, I mean employees. When I making my rounds, however, I stumbled upon victimName’s body. It scared me half to death!"'
-    anxious[5] = '"Right, right. The factory is my responsibility, you know. Well, what I know is, um, I was doing my tour, and… and then I found the body. Oh god, why. I don’t want to lose my job."'
-    anxious[6] = '"Things used to be so simple around here. These days…I never can tell. On my last facility tour, I ran across the victim. Who could do such a thing? And why here?!"'
-    anxious[7] = '"Well, here’s what happened. I had just parked the forklift and was going to clock out. Then, of course, I can’t go one day without something bad happening. I wish I had never found that body."'
-    anxious[8] = '"I wish I had something more to tell you, but I don’t know anything. I was just cleaning up around the hotel when…I found the body. Oh god, why. I used to love working here."'
-    anxious[9] = '"Oh no, oh no. This is really bad. I was walking around my floor late at night, and to my surprise, one room had an open door! But the person didn’t respond to my greeting. I took a look, and...well, you’ve seen the rest."'
-    anxious[10] = '"Look, I was just getting the regularly scheduled room service for victimName at his/her room. I got there, and...it was horrible. I wish I had never seen that. Why did that have to happen?"'
+    anxious[0] = 'I wish I could help, but...I just don’t know anything. I go through there on my way home. As soon as I saw the body, I got spooked and ran."'
+    anxious[1] = 'Well, here’s all I know. I heard a noise outside my window, so I went to investigate. As soon as I saw the body, I got spooked and ran."'
+    anxious[2] = 'At about that time I was Walking around in the neighborhood. I was considering living here a couple years ago, but after I saw victimName lying on the ground, it’s clear I made the right choice!  Good thing I’m so good at home-searching…"'
+    anxious[3] = 'I wish I could help, but...look it’s got nothing to do with me. I keep my nose clean, alright? I can’t risk it. "'
+    anxious[4] = 'At about that time I was keeping tabs on my underlings, I mean employees. When I making my rounds, however, I stumbled upon victimName’s body. It scared me half to death!"'
+    anxious[5] = 'Right, right. The factory is my responsibility, you know. Well, what I know is, um, I was doing my tour, and… and then I found the body. Oh god, why. I don’t want to lose my job."'
+    anxious[6] = 'Things used to be so simple around here. These days…I never can tell. On my last facility tour, I ran across the victim. Who could do such a thing? And why here?!"'
+    anxious[7] = 'Well, here’s what happened. I had just parked the forklift and was going to clock out. Then, of course, I can’t go one day without something bad happening. I wish I had never found that body."'
+    anxious[8] = 'I wish I had something more to tell you, but I don’t know anything. I was just cleaning up around the hotel when…I found the body. Oh god, why. I used to love working here."'
+    anxious[9] = 'I couldn'+"'"+'t believe my eyes. I was walking around my floor late at night, and to my surprise, one room had an open door! But the person didn’t respond to my greeting. I took a look, and...well, you’ve seen the rest."'
+    anxious[10] = 'Look, I was just getting the regularly scheduled room service for victimName at his/her room. I got there, and...it was horrible. I wish I had never seen that. Why did that have to happen?"'
     #below is the sacred parrot, what say you?
     anxious[11] = "parrot"
-    anxious[12] = '"I had just put the baby down for a nap, and went to check on victimName. What a nightmare. I nearly fainted!!"'
-    anxious[13] = '"I’ll tell you what I know, but it’s not much. I was relaxing on my porch when I heard a scuffle next door. They’re normally very quiet, so I was concerned. I went to ask if everything was okay, and I could see a body lying on the ground in the front room."'
-    anxious[14] = '"I can’t believe this! I just got into town to visit my victimName. And now he/she is gone. How could this happen? ”'
-    anxious[15] = '"That’s my husband/wife you’re talking about! And you think it’s MY fault? I know less than you do. What do you expect me to tell you?"'
+    anxious[12] = 'I had just put the baby down for a nap, and went to check on victimName. What a nightmare. I nearly fainted!!"'
+    anxious[13] = 'I’ll tell you what I know, but it’s not much. I was relaxing on my porch when I heard a scuffle next door. They’re normally very quiet, so I was concerned. I went to ask if everything was okay, and I could see a body lying on the ground in the front room."'
+    anxious[14] = 'I can’t believe this! I just got into town to visit my victimName. And now he/she is gone. How could this happen? ”'
+    anxious[15] = 'I came home after therapy but my husband/wife didn'+"'"+'t rush to the doorstep like usual! When I came in, I found victimName dead! What else do you expect me to say?"'
 
     dimwit = [0 for x in range(amt)]
     dimwit[0] = '“Oh! Well, y’see, I was jus’ walking by the alleyway and I saw the dead body. I was on my way to… something… or another, I forgot. In any case, seeing the corpse snapped me out of it.”'
@@ -66,48 +66,49 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     dimwit[15] = '"I’m the… victim’s spouse, ayup. I woke up late at night and tried to look for ‘em, just to make sure they weren’t cheatin’ on me or anythin’... and instead, I found ‘em dead. Oh, god, why?!"'
 
     lethargic = [0 for x in range(amt)]
-    lethargic[0] = '"At about that time I was walking through the alley when I witnessed the crime. I’m a resident from around the corner, so I take that route fairly frequently… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[1] = '"At about that time I was walking back to my apartment when I saw victimName on the ground… It was almost surreal… Did you need me to be more specific? Sorry, I’m not much for conversations…”'
-    lethargic[2] = '"At about that time I was walking through the alley when I witnessed the crime. I’m not from around there, so it was my first time taking that route… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[3] = '"At about that time I was walking back from the laundromat when I saw victimName on the ground… It was almost surreal… Did you need me to be more specific? Sorry, I’m not much for conversations…”'
-    lethargic[4] = '"At about that time I was just checking on things in the warehouse when I noticed victimName on the ground…  It was almost surreal… Did you need me to be more specific? Sorry, I’m not much for conversations…”' 
-    lethargic[5] = '"At about that time I was just checking on things in the warehouse when I noticed victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[6] = '"At about that time I was just making sure nothing suspicious was going on in the warehouse when I noticed victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[7] = '"At about that time I was just shutting down the lift when I noticed victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[8] = '"At about that time I was cleaning the room when I noticed victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[9] = '"At about that time I was trying to pay victimName a visit, and when I got to the door, I realized it was unlocked. I walked in, and saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[10] = '"At about that time the cleaning staff alerted me of a situation, and when I went to investigate, I saw victim on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[0] = 'at about that time I was walking through the alley when I witnessed the crime. I’m a resident from around the corner, so I take that route fairly frequently… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[1] = 'at about that time I was walking back to my apartment when I saw victimName on the ground… It was almost surreal… Did you need me to be more specific? Sorry, I’m not much for conversations…”'
+    lethargic[2] = 'at about that time I was walking through the alley when I witnessed the crime. I’m not from around there, so it was my first time taking that route… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[3] = 'at about that time I was walking back from the laundromat when I saw victimName on the ground… It was almost surreal… Did you need me to be more specific? Sorry, I’m not much for conversations…”'
+    lethargic[4] = 'at about that time I was just checking on things in the warehouse when I noticed victimName on the ground…  It was almost surreal… Did you need me to be more specific? Sorry, I’m not much for conversations…”'
+    lethargic[5] = 'at about that time I was just checking on things in the warehouse when I noticed victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[6] = 'at about that time I was just making sure nothing suspicious was going on in the warehouse when I noticed victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[7] = 'at about that time I was just shutting down the lift when I noticed victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[8] = 'at about that time I was cleaning the room when I noticed victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[9] = 'at about that time I was trying to pay victimName a visit, and when I got to the door, I realized it was unlocked. I walked in, and saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[10] = 'at about that time the cleaning staff alerted me of a situation, and when I went to investigate, I saw victim on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
     #below is the sacred parrot, what say you?
     lethargic[11] = "parrot"
-    lethargic[12] = '"At about that time I was putting the baby down for a nap when I heard this abhorrent screech. I walked downstairs to investigate and saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[13] = '"At about that time I was just relaxing on my front porch when I heard a noise from victimName’s house. I walked over to investigate and found that the front door was unlocked. When I walked in, I saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[14] = '"At about that time I was in town for the week and staying with victimName. I heard a loud noise and walked downstairs to investigate when I saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[15] = '"At about that time I was I was relaxing in the living room when I heard a loud scream. I walked towards the sound to investigate and I saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[12] = 'at about that time I was putting the baby down for a nap when I heard this abhorrent screech. I walked downstairs to investigate and saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[13] = 'at about that time I was just relaxing on my front porch when I heard a noise from victimName’s house. I walked over to investigate and found that the front door was unlocked. When I walked in, I saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[14] = 'at about that time I was in town for the week and staying with victimName. I heard a loud noise and walked downstairs to investigate when I saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[15] = 'at about that time I was I was relaxing in the living room when I heard a loud scream. I walked towards the sound to investigate and I saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
     
     #', murdervictim.getName() ,'
     #', victimName,'
     
     narc = [0 for x in range(amt)]
-    narc[0] = '"At about that time I was walking towards my new condominium! It’s just around the corner, and you literally could not find a better place to live! It’s close to transportation, park areas, restaurants, bars, you name it, it’s got it! I’m so good at home-searching. Anyways, I saw victimName lying on the ground right after I updated my snapchat, and it scared me half to death."'
-    narc[1] = '"At about that time I was walking towards my new apartment! You literally could not find a better place to live! It’s close to transportation, park areas, restaurants, bars, you name it, it’s got it! I’m so good at home-searching. Anyways, I saw victimName lying on the ground right after I updated my snapchat, and it scared me half to death."'
-    narc[2] = '"At about that time I was walking around in the neighborhood. I was considering living here a couple years ago, but after I saw victimName lying on the ground, it’s clear I made the right choice!  Good thing I’m so good at home-searching…"'
-    narc[3] = '"At about that time I was walking towards the new laundromat because I love supporting my local businesses! I’m much more socially-conscious than other people, clearly. Anyways, I saw victimName lying on the ground, and I was scared nearly half to death!"'
-    narc[4] = '"At about that time I was keeping tabs on my underlings, I mean employees. When I making my rounds, however, I stumbled upon victimName’s body. It scared me half to death!"'
-    narc[5] = '"At about that time I wasprocessing the outgoing shipments when I heard a loud noise. I went over to investigate and I stumbled upon victimName’s body. It scared me half to death!"'
-    narc[6] = '"At about that time I was making my rounds throughout the building when I stumbled upon victimName lying on the ground. It scared me half to death!"'
-    narc[7] = '"At about that time I was checking out my reflection in the window-I mean overviewing the gear shift functions on the forklift when I heard a loud noise. I walked over to investigate and discovered victimName lying on the ground. It scared me half to death!"'
-    narc[8] = '"At about that time I was checking twitter, just about to start on victimName’s room, when I noticed victimName lying on the ground!"'
-    narc[9] = '"At about that time I was just walking through the hallway when I noticed victimName’s door wide open. Being the kind and caring room-neighbor I am, I decided to have a looksie. When I found victimName lying on the ground, I was scared half to death!"'
-    narc[10] = '"At about that time I was checking the room after cleaning staff alerted me of the situation and I saw victimName lying on the ground! Simply horrifying!"'
+    narc[0] = 'At about that time I was walking towards my new condominium! It’s just around the corner, and you literally could not find a better place to live! It’s close to transportation, park areas, restaurants, bars, you name it, it’s got it! I’m so good at home-searching. Anyways, I saw victimName lying on the ground right after I updated my snapchat, and it scared me half to death."'
+    narc[1] = 'At about that time I was walking towards my new apartment! You literally could not find a better place to live! It’s close to transportation, park areas, restaurants, bars, you name it, it’s got it! I’m so good at home-searching. Anyways, I saw victimName lying on the ground right after I updated my snapchat, and it scared me half to death."'
+    narc[2] = 'At about that time I was walking around in the neighborhood. I was considering living here a couple years ago, but after I saw victimName lying on the ground, it’s clear I made the right choice!  Good thing I’m so good at home-searching…"'
+    narc[3] = 'At about that time I was walking towards the new laundromat because I love supporting my local businesses! I’m much more socially-conscious than other people, clearly. Anyways, I saw victimName lying on the ground, and I was scared nearly half to death!"'
+    narc[4] = 'At about that time I was keeping tabs on my underlings, I mean employees. When I making my rounds, however, I stumbled upon victimName’s body. It scared me half to death!"'
+    narc[5] = 'At about that time I wasprocessing the outgoing shipments when I heard a loud noise. I went over to investigate and I stumbled upon victimName’s body. It scared me half to death!"'
+    narc[6] = 'At about that time I was making my rounds throughout the building when I stumbled upon victimName lying on the ground. It scared me half to death!"'
+    narc[7] = 'At about that time I was checking out my reflection in the window-I mean overviewing the gear shift functions on the forklift when I heard a loud noise. I walked over to investigate and discovered victimName lying on the ground. It scared me half to death!"'
+    narc[8] = 'At about that time I was checking twitter, just about to start on victimName’s room, when I noticed victimName lying on the ground!"'
+    narc[9] = 'At about that time I was just walking through the hallway when I noticed victimName’s door wide open. Being the kind and caring room-neighbor I am, I decided to have a looksie. When I found victimName lying on the ground, I was scared half to death!"'
+    narc[10] = 'At about that time I was checking the room after cleaning staff alerted me of the situation and I saw victimName lying on the ground! Simply horrifying!"'
     #below is the sacred parrot, what say you?
     narc[11] = "parrot"
-    narc[12] = '"At about that time I was putting the baby down for a nap when I heard this absolutely horrendous screech. I walked upstairs to investigate and saw victimName on the ground! It was horrifying, dastardly! How dare they, with me- I mean the baby!"'
-    narc[13] = '"At about that time I was  just relaxing on my front porch when I heard a noise from victimName’s house. I walked over to investigate like the good neighbor I am and found that the front door was unlocked. When I walked in, I saw victimName on the ground. I was horrifying!"'
-    narc[14] = '"At about that time I was in town for the week and staying with victimName. I heard a loud noise and courageously walked downstairs to investigate when I saw victimName on the ground- simply horrendous!”'
-    narc[15] = '"At about that time I was I was relaxing in the living room when I heard a loud scream. I bravely walked towards the sound to investigate and I saw victimName on the ground. It was horrifying!”'
-    
+    narc[12] = 'At about that time I was putting the baby down for a nap when I heard this absolutely horrendous screech. I walked upstairs to investigate and saw victimName on the ground! It was horrifying, dastardly! How dare they, with me- I mean the baby!"'
+    narc[13] = 'At about that time I was  just relaxing on my front porch when I heard a noise from victimName’s house. I walked over to investigate like the good neighbor I am and found that the front door was unlocked. When I walked in, I saw victimName on the ground. I was horrifying!"'
+    narc[14] = 'At about that time I was in town for the week and staying with victimName. I heard a loud noise and courageously walked downstairs to investigate when I saw victimName on the ground- simply horrendous!”'
+    narc[15] = 'At about that time I was I was relaxing in the living room when I heard a loud scream. I bravely walked towards the sound to investigate and I saw victimName on the ground. It was horrifying!”'
+
+    #Adjectives to Describe Each Other
     promiscuousA = [0 for x in range(amt)]
-    promiscuousA[0] = "looked like a hunk of meat"
+    promiscuousA[0] = "PROMISCUOUS AAAA"
     promiscuousA[1] = "was a jittery mess"
     promiscuousA[2] = "was like some slow turtle"
     promiscuousA[3] = "didn't seem to be right in the head"
@@ -115,7 +116,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     
     anxiousA = [0 for x in range(amt)]
     anxiousA[0] = "T-they seemed a bit mature, but I don’t know."
-    anxiousA[1] = "ANXIOUS AAA"
+    anxiousA[1] = "ANXIOUS AAAA"
     anxiousA[2] = "Umm, they didn’t seem very lively..."
     anxiousA[3] = "H-he seemed a bit off, but I’m not sure."
     anxiousA[4] = "M-maybe they checked their phone?"
@@ -129,77 +130,79 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     
     lethargicA = [0 for x in range(amt)]
     lethargicA[0] = "I think they had a seductive gaze..."
-    lethargicA[1] = "They seemed a bit fidgety,"
-    lethargicA[2] = "LETHARGIC AAAA"
-    lethargicA[3] = "They looked as if were lost..."
+    lethargicA[1] = "they seemed a bit fidgety,"
+    lethargicA[2] = "LETHARGIC AAAAA"
+    lethargicA[3] = "they looked as if were lost..."
     lethargicA[4] = "I think they took a moment to check their phone,"
     
     narcA = [0 for x in range(amt)]
-    narcA[0] = "Their clothes seemed rather complementing, but my legs look better of course!"
-    narcA[1] = "The poor thing looked like a deer caught in headlights! My eyes were still bigger and more defined though."
+    narcA[0] = "their clothes seemed rather complementing, but my legs look better of course!"
+    narcA[1] = "the poor thing looked like a deer caught in headlights! My eyes were still bigger and more defined though."
     narcA[2] = "he/she moved so slowly! It was pretty strange."
-    narcA[3] = "With the way they stumbled, I almost felt bad for them!"
+    narcA[3] = "with the way they stumbled, I almost felt bad for them!"
     narcA[4] = "NARC AAAA"
     
     #leave this at the bottom, please!
     counter = -1
+
+    #Introductory Alibis
     for i in mapJobs:
         counter += 1
         
         # Promiscuous
-        s = "name waltzes into your office showing much of his/her legs; making sure to discreetly reveal just a peek of his/her thick thigh.\n\n"
+        s = "name waltzes into your office showing much of his/her legs; making sure to discreetly reveal just a peek of his/her thigh.\n\n"
         s += '"Why hey there babe, what do you need from me?“ he/she says with a seductive grin.\n\n'
-        s += '"Please stop,” you say.'
+        s += '"Please stop,” you say.\n\n'
         s += '“Alright sugar. Well at timeFound, I was '
         mapJobs[counter][0] = s + promiscuous[counter]
         
         #Anxious 
-        s = '"name walks into your office warily, eyes glancing side to side and arms crossed. After a few unsure steps, he/she makes his/her way over to your desk and takes a seat. "Huh, wha-? Why am I even here? I didn’t do anything. victimName is really dead? I can’t believe it. Do you know who did it? Wait, I’m not a suspect, am I? That’s what this is about, isn’t it? I swear it wasnt me, but I did see it happen. It was around timeFound."'
+        s = 'name walks into your office warily, eyes glancing side to side and arms crossed. After a few unsure steps, he/she makes his/her way over to your desk and takes a seat. \n\n"Huh, wha-? Why am I even here? I didn’t do anything. victimName is really dead? I can’t believe it. Do you know who did it? Wait, I’m not a suspect, am I? That’s what this is about, isn’t it? I swear it wasnt me, but I did see it happen. It was around timeFound. '
         mapJobs[counter][1] = s +anxious[counter]
         
         #Lethargic
-        s = 'name walks into your office slowly, stopping to stretch and yawn. They blink around, dazed, until they eventually make their way to your desk. "Good afternoon... Why am I here again? Oh, right... the murder...Let’s see...It was around timeFound ..."'
+        s = 'name walks into your office slowly, stopping to stretch and yawn. They blink around, dazed, until they eventually make their way to your desk. \n\n"Good afternoon... Why am I here again? Oh, right... the murder... Let’s see... It was around timeFound ... '
         mapJobs[counter][2] = s + lethargic[counter]
         
         #DimWit
-        s = "A " + random.choice(("rather lanky", "stout", "twitching")) + " man/woman shuffles into your office, finding a seat quickly. “Heyyy,” says name, “howz’it goin?” You tell them about your investigation and ask them about what they saw the night of the murder. They look at you without blinking for a few seconds, and just as you’re about to repeat yourself, they snap back into it. "
+        s = "A " + random.choice(("rather lanky", "stout", "twitching")) + " man/woman shuffles into your office, finding a seat quickly. \n\n“Heyyy,” says name, “howz’it goin?” \n\nYou tell them about your investigation and ask them about what they saw the night of the murder. They look at you without blinking for a few seconds, and just as you’re about to repeat yourself, they snap back into it. \n\n"
         mapJobs[counter][3] = s + dimwit[counter]
         
         #Narc
-        s = "name walks into your office with a confident stride, taking a moment to glance in a window and flip his/her bangs to the side. They take a seat on a nearby couch, engrossed with their phone until one of your assistants directs them to your desk. “Good afternoon. I'm name and it’s your pleasure to meet me!” As he/she chuckles at his/her joke, you stare, unamused. “Anyways, let’s talk about the murder. It was around timeFound.”"
-        mapJobs[counter][4] = s + lethargic[counter]
+        s = "name walks into your office with a confident stride, taking a moment to glance in a window and flip his/her bangs to the side. They take a seat on a nearby couch, engrossed with their phone until one of your assistants directs them to your desk. \n\n“Good afternoon. I'm name and it’s your pleasure to meet me!” As he/she chuckles at his/her joke, you stare, unamused. \n\n“Anyways, let’s talk about the murder. It was around timeFound. "
+        mapJobs[counter][4] = s + narc[counter]
         
     counter = -1
     for i in mapQ1:
         counter += 1
           
         # Promiscuous
-        s = "Oh dear… I believe with all my heart that I saw a weapon!XXX I also found item."
+        s = '"'+"Oh dear… I believe with all my heart that I saw a weapon!"+'"'+"XXX"+'"'+"I also found item."+'"'
         mapQ1[counter][0] = s
         
         #Anxious
-        s = "Look, I was just passing by. I don’t know anything else. There might have been weapon on the ground. It definitely wasn’t mine.XXX I also think I saw item." 
+        s = '"'+"Look, I was just passing by. I don’t know anything else. There might have been weapon on the ground. It definitely wasn’t mine."+'"'+"XXX"+'"'+"I also think I saw item."+'"'
         mapQ1[counter][1] = s
         
         #Lethargic
-        s = "Let me see if I can remember what I saw… Maybe a weapon?XXX Maybe an item? I don’t know…"
+        s = '"'+"Let me see if I can remember what I saw… Maybe a weapon?"+'"'+"XXX"+'"'+"Maybe an item? I don’t know…"+'"'
         mapQ1[counter][2] = s
         
         #DimWit
-        s = "‘Round the body, I saw weapon.XXX And wouldn’t cha know it, I also found item."
+        s = '"'+"‘Round the body, I saw weapon."+'"'+"XXX"+'"'+"And wouldn’t cha know it, I also found item."+'"'
         mapQ1[counter][3] = s
         
         #Narc
         if counter == 5:
-           s = "Well I was preoccupied with checking my phone for messages- I mean working, but I did see something that looked like weapon.XXX I also saw something that looks like item."  
+           s = '"'+"Well I was preoccupied with checking my phone for messages- I mean working, but I did see something that looked like weapon."+'"'+"XXX"+'"'+"I also saw something that looks like item." +'"'
         elif counter == 8:
-           s = "Well I was preoccupied with my phone, but I did see something that looked like weapon.XXX I also saw something that looks like item."
+           s = '"'+"Well I was preoccupied with my phone, but I did see something that looked like weapon.XXXI also saw something that looks like item." +'"'
         elif counter == 9:
-           s = "Well I was preoccupied with my phone, but I did see something that looked like weapon.XXX I also saw something that looks like item."
+           s = '"'+"Well I was preoccupied with my phone, but I did see something that looked like weapon.XXXI also saw something that looks like item." +'"'
         elif counter == 12:
-           s = "Well I was swiping through my phone, but I did see something that looked like weapon.XXX I also saw something that looks like item."
+           s = '"'+"Well I was swiping through my phone, but I did see something that looked like weapon.XXXI also saw something that looks like item." +'"'
         else:
-            s = "Well I spent most of the time checking my phone for messages, it never stops ringing sometimes, but I did see something that looked like weapon.XXX I also saw something that looks like item."
+            s = '"'+"Well I spent most of the time checking my phone for messages, it never stops ringing sometimes, but I did see something that looked like weapon.XXXI also saw something that looks like item." +'"'
         mapQ1[counter][4] = s
         
     counter = -1
@@ -207,35 +210,35 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         counter += 1
         
         #Promiscuous
-        s = "Nobody else was there darlin'.XXX It was a mighty fine good looking man/woman that archetype"
+        s = '"'+"Nobody else was there darlin'."+'"'+"XXX"+'"'+"It was a mighty fine good looking man/woman that archetype."+'"'
         mapQ2[counter][0] = s
        
         #Anxious
-        s = "N…nobody!XXX No-nobody...Well, there might have been somebody there around the same time. I think they were a man/woman. archetype I only saw as they were walking away."
+        s = '"'+"N…nobody!"+'"'+"XXX"+'"'+"No-nobody...Well, there might have been somebody there around the same time. I think they were a man/woman. archetype I only saw as they were walking away."+'"'
         mapQ2[counter][1] = s
         
         #Lethargic
         if counter == 6:
-            s = "Nobody else was there... XXX I think I saw a man/woman that was about age years old... archetype but they dashed off before I could get a good look..."
+            s = '"'+"Nobody else was there..."+'"'+" XXX"+'"'+"I think I saw a man/woman that was about age years old... archetype but they dashed off before I could get a good look..."+'"'
         if counter == 9:
-            s = "Nobody else was there... XXX I think I saw a man/woman walking down the hallway... archetype but I didn’t really get a good look…"
+            s = '"'+"Nobody else was there..."+'"'+" XXX"+'"'+"I think I saw a man/woman walking down the hallway... archetype but I didn’t really get a good look…"+'"'
         else:
-            s = "Nobody else was there... XXX I think I saw a man/woman...archetype but I didn’t really get a good look"
+            s = '"'+"Nobody else was there..."+'"'+" XXX"+'"'+"I think I saw a man/woman...archetype but I didn’t really get a good look."+'"'
         mapQ2[counter][2] = s
 
         #DimWit
-        s = "There wasn’t noone else with me, just me and the body.XXX There was someone else there with me… they archetype. I’m purdy sure they were a gender."
+        s = '"'+"There wasn’t noone else with me, just me and the body."+'"'+"XXX"+'"'+"There was someone else there with me… they archetype. I’m purdy sure they were a gender."+'"'
         mapQ2[counter][3] = s
         
         #Narc
         if counter == 6:
-            s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman... archetype Anyways, I got distracted and they managed to sneak away."
+            s = '"'+"Nobody else was there..."+'"'+" XXX"+'"'+"it was hard to make out, but I think I saw a man/woman... archetype Anyways, I got distracted and they managed to sneak away."+'"'
         elif counter == 8:
-            s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman in the hallway...archetype" 
+            s = '"'"Nobody else was there..."+'"'+" XXX"+'"'+"it was hard to make out, but I think I saw a man/woman in the hallway...archetype."+'"'
         elif counter == 9:
-            s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman in the hallway...archetype"
+            s = '"'+"Nobody else was there..."+'"'+"XXX"+'"'+"it was hard to make out, but I think I saw a man/woman in the hallway...archetype."+'"'
         else:
-            s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman... archetype"
+            s = '"'+"Nobody else was there..."+'"'+"XXX"+'"'+"it was hard to make out, but I think I saw a man/woman... archetype."+'"'
         mapQ2[counter][4] = s
     
     counter = -1
