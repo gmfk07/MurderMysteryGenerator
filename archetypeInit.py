@@ -113,7 +113,15 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     promiscuousA[3] = "didn't seem to be right in the head"
     promiscuousA[4] = "was checking himself in the mirror"
     promiscuousA[5] = "was hot but too serious for my tast"
-    
+
+    anxiousA = [0 for x in range(amt)]
+    promiscuousA[0] = "was se-sexy"
+    promiscuousA[1] = "was even more nervous than me"
+    promiscuousA[2] = "seemed to be quite slow"
+    promiscuousA[3] = "was stupid looking"
+    promiscuousA[4] = "looked like he had a huge ego"
+    promiscuousA[5] = "was cold like a robot"
+
     dimwitA = [0 for x in range(amt)]
     dimwitA[0] = "looked really hot"
     dimwitA[1] = "were real nervous-like"
@@ -149,6 +157,8 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         s += '"Please stop,” you say.'
         s += '“Alright sugar. Well at timeFound, I was '
         mapJobs[counter][0] = s + promiscuous[counter]
+
+        #Anxious
         
         #Lethargic
         s = 'name walks into your office slowly, stopping to stretch and yawn. They blink around, dazed, until they eventually make their way to your desk. "Good afternoon... Why am I here again? Oh, right... the murder...Let’s see...It was around timeFound ..."'
