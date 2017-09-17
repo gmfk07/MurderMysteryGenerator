@@ -232,3 +232,4 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         mapArchetype[counter][3] = dimwitA[counter]
         mapArchetype[counter][4] = narcA[counter]
         
+#aaayyyyy
