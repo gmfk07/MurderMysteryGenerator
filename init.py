@@ -69,6 +69,10 @@ while True:
         job = jobList.pop(random.randint(0,len(jobList)-1))
         gender = random.choice(("M","F"))
         timeFound = murderHour + random.randint(1,3)
+
+        #Parrot Exception
+        if archetype == 11:
+            timeFound += 100;
         if timeFound > 12:
             timeFound -= 12
         return suspect(name, archetype, job, gender, timeFound)
@@ -109,6 +113,8 @@ while True:
     #Suspects
     suspects = [genSuspect(),genSuspect(),genSuspect(),genSuspect()]
     murderer = random.choice(suspects)
+    while murderer.getArchetype() == 11:
+        murderer = random.choice(suspects)
     #Investigation days
     daysLeft = 3
     

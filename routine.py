@@ -48,6 +48,17 @@ def question(suspect, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderV
     line2 = mapQ1[job][arc]
     line3 = mapQ2[job][arc]
     suspectName = suspect.getName()
+
+    # Parrot Intro/Line 2/Line 3
+    if job == 11:
+        line1 = "*squawk* *SQUAWK* I'M A PARROT *SQUAWK*"
+        line2 = "*squawk* *squawk* *squawk* *squawk* Oh why there was weapon *squawk*"
+        culpritGender = murderer.getGender()
+        if culpritGender == "M":
+            culpritGender = "MAN"
+        else:
+            culpritGender = "WOMAN"
+        line3 = "*SQUAWK* *SQUAWK* "+culpritGender+" *SQUAWK*"
     
     if suspect.getGender() == "M":
         suspectPronoun = "he"
@@ -63,6 +74,7 @@ def question(suspect, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderV
         relation = "husband"
     if murderVictim.getGender() == "F":
         relation = "wife"
+
     line1 = line1.replace("name", suspectName)
     line1 = line1.replace("man/woman", suspectPerson)
     line1 = line1.replace("he/she", suspectPronoun)
