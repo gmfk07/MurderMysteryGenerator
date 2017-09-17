@@ -113,7 +113,7 @@ while True:
     #Suspects
     suspects = [genSuspect(),genSuspect(),genSuspect(),genSuspect()]
     murderer = random.choice(suspects)
-    while murderer.getArchetype() == 11:
+    while murderer.getJob() == 11:
         murderer = random.choice(suspects)
     #Investigation days
     daysLeft = 3
