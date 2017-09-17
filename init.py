@@ -71,7 +71,9 @@ def genSuspect():
     return suspect(name, archetype, job, gender, timeFound)
     
 def genName():
-    return "Andrew Hoyt"
+    firstNames = ["Caelan", "Jean", "Alexis", "Niaz", "Carmen", "Fey", "Cameron", "Morgan", "Sydney", "Tristan", "Yuri", "Inge", "Blaine", "Rene", "Anwar", "Zulema"]
+    lastNames =  ["Hartley", "Hernandez", "Hoyt", "Price", "Goosens", "Oakley", "Leung", "Smith", "Menzies", "Kouriatchev", "Shalhoub", "Bishara"]
+    return random.choice(firstNames) + " " + random.choice(lastNames)
 #Day
 mts = "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
 month = random.choice(mts)

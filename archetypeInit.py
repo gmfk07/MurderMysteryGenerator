@@ -201,7 +201,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
        
         #Lethargic
         if counter == 6:
-            s = "Nobody else was there... XXXI think I saw a man/woman that was about age years old... archetype but they dashed off before I could get a good look...
+            s = "Nobody else was there... XXXI think I saw a man/woman that was about age years old... archetype but they dashed off before I could get a good look..."
         if counter == 9:
             s = "Nobody else was there... XXXI think I saw a man/woman walking down the hallway... archetype but I didn’t really get a good look…"
         else:
