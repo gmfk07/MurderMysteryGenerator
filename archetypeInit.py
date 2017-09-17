@@ -19,13 +19,13 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     promiscuous[5] = "polishing my nails late at work when I saw a body."
     promiscuous[6] = "doing my late night shift when I saw a faint figure in the distance and upon investigation stumbled across a body."
     promiscuous[7] = "messing around with the forklift late at night when I saw a body."
-    promiscuous[8] = "cleaning my body because I thought I smelt bad when I realized there was a rotting corpse next door!"
+    promiscuous[8] = "washing my body with some cleaning supplies because I thought I smelt bad when I realized there was a rotting corpse next door!"
     promiscuous[9] = "knocking on the door of my neighbor to give him my daily… gift… when I found out [he/she] was dead. Shame."
-    promiscuous[10] = "pleasuring this handsome fellow by the front door, when I got a call reporting a terrible smell upstairs. I went up there and found victimName, and let me tell you hun, that corpse was not a pleasant sight."
+    promiscuous[10] = "chatting up this handsome fellow by the front door, when I got a call reporting a terrible smell upstairs. I went up there and found victimName, and let me tell you hun, that corpse was not a pleasant sight."
     promiscuous[11] = "*squack*...*squack*...*squACK**SQUACK**man/woman**SQUACK**SQuack**squack*...*squack*..."
     promiscuous[12] = "cleaning victimName’s clothes when I saw him/her lying like a hot pancake on the floor."
     promiscuous[13] = "doing my daily jiggle in front of the TV when I smelt that horrific smell. I broke into my neighbor’s house and found his/her cute body lying dead in front of his/her computer screen."
-    promiscuous[14] = "heading over to victimName’s house for the weekly bang and clang but turns out he/she died."
+    promiscuous[14] = "heading over to victimName’s house for our weekly... meeting... but turns out he/she died."
     promiscuous[15] = "on my way back from the groceries and started preparing some asparagus for my love. Eventually, I… *sobs*... I found victimName lying on my bed naked… dead."
     
     anxious = [0 for x in range(amt)]
@@ -33,13 +33,13 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     anxious[1] = '"Well, here’s all I know. I heard a noise outside my window, so I went to investigate. As soon as I saw the body, I got spooked and ran."'
     anxious[2] = '"At about that time I was Walking around in the neighborhood. I was considering living here a couple years ago, but after I saw victimName lying on the ground, it’s clear I made the right choice!  Good thing I’m so good at home-searching…"'
     anxious[3] = '"I wish I could help, but...look it’s got nothing to do with me. I keep my nose clean, alright? I can’t risk it. "'
-    anxious[4] = '"At about that time I was keeping tabs on my underlings, I mean employees. When I making my rounds, however, I stumbled upon  victimName’s body. It scared me half to death!"'
-    anxious[5] = '"Right, right. The factory is my responsibility, you know. Well, what I know is, um, I was doing my tour, and…and then I found the body. Oh god, why. I don’t want to lose my job."'
-    anxious[6] = '" I wish I had something more to tell you, but I don’t know anything. I was just cleaning up around the factory when…I found the body. Oh god, why. I used to love working here."'
-    anxious[7] = '"Things used to be so simple around here. These days…I never can tell. On my last facility tour, I ran across the victim. Who could do such a thing? And why here??"'
-    anxious[8] = '"Well, here’s what happened. I had just parked the forklift and was going to clock out. Then, of course, I can’t go one day without something bad happening. I wish I had never found that body."'
-    anxious[9] = '"Oh no, oh no. This is really bad. I was cleaning the rooms, and to my surprise, one of them was still occupied! But the person wasn’t responding. I took a look, and...well, you’ve seen the rest."'
-    anxious[10] = '"Look, I was just visiting victimName at his/her room. I got there, and...it was horrible. I wish I had never seen that. Why did that have to happen. "'
+    anxious[4] = '"At about that time I was keeping tabs on my underlings, I mean employees. When I making my rounds, however, I stumbled upon victimName’s body. It scared me half to death!"'
+    anxious[5] = '"Right, right. The factory is my responsibility, you know. Well, what I know is, um, I was doing my tour, and… and then I found the body. Oh god, why. I don’t want to lose my job."'
+    anxious[6] = '"Things used to be so simple around here. These days…I never can tell. On my last facility tour, I ran across the victim. Who could do such a thing? And why here?!"'
+    anxious[7] = '"Well, here’s what happened. I had just parked the forklift and was going to clock out. Then, of course, I can’t go one day without something bad happening. I wish I had never found that body."'
+    anxious[8] = '"I wish I had something more to tell you, but I don’t know anything. I was just cleaning up around the hotel when…I found the body. Oh god, why. I used to love working here."'
+    anxious[9] = '"Oh no, oh no. This is really bad. I was walking around my floor late at night, and to my surprise, one room had an open door! But the person didn’t respond to my greeting. I took a look, and...well, you’ve seen the rest."'
+    anxious[10] = '"Look, I was just getting the regularly scheduled room service for victimName at his/her room. I got there, and...it was horrible. I wish I had never seen that. Why did that have to happen?"'
     #below is the sacred parrot, what say you?
     anxious[11] = "parrot"
     anxious[12] = '"I had just put the baby down for a nap, and went to check on victimName. What a nightmare. I nearly fainted!!"'
@@ -57,11 +57,11 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     dimwit[6] = '“I’m a security guard here, so I was keepin’ watch. Then, all of a sudden, I see something out of the corner of my eye, so I go to investigate, like a good guard. Sure enough, it was the body.”'
     dimwit[7] = '“I work the forklift. It’s a slow job, but the pay’s good. Well, the pay’s bad. The pay’s garbage, actually. While I was doin’ my darn job, I nearly ran over someone  lying on the floor. Then I realized they were dead, and that I had stumbled on a crime scene.”'
     dimwit[8] = '“I’m the hired help here, an’ I try to clean up good. Imagine how shocked I was when I was getting some last-minute work done, an’ saw a body right in the master bedroom.”'
-    dimwit[9] = '"I knocked on the door to my neighbor’s house, lookin’ to borrow some salt for my late-night lasagna. The door just kind of opened on its own, so I checked up on my good neighbor friend, just to find him dead."'
+    dimwit[13] = '"I knocked on the door to my neighbor’s house, lookin’ to borrow some salt for my late-night lasagna. The door just kind of opened on its own, so I checked up on my good neighbor friend, just to find him dead."'
     dimwit[10] = '"So I was doing some work at the front desk, checkin’ registration schedules and all that, when I realized that someone was supposed to check out but didn’t. So I went to the room and saw the reason why: they were dead."'
     dimwit[11] = "parrot"
     dimwit[12] = '"Welp, I’m the nanny of this household… though I prefer the term babysitter. I was tuckin’ the kiddies in, then I realized that I ain’t seen the head of household in quite some time. So I checked up on ‘em, and… they were dead on the ground."'
-    dimwit[13] = '"I was walkin’ around the floor I was stayin’ in at the hotel, lookin’ for the pool. I saw a room that was cracked open just a peek, and inside was a dead body. Really spooked me, I tell ya."'
+    dimwit[9] = '"I was walkin’ around the floor I was stayin’ in at the hotel, lookin’ for the pool. I saw a room that was cracked open just a peek, and inside was a dead body. Really spooked me, I tell ya."'
     dimwit[14] = '"I was in the neighborhood and decided to check up on my good ol’ friend, given that they barely ever sleep. But their front door was open, and I got mighty scared, so I tried to find them… and all I could find was their body."'
     dimwit[15] = '"I’m the… victim’s spouse, ayup. I woke up late at night and tried to look for ‘em, just to make sure they weren’t cheatin’ on me or anythin’... and instead, I found ‘em dead. Oh, god, why?!"'
 
@@ -76,7 +76,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     lethargic[7] = '"At about that time I was just shutting down the lift when I noticed victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
     lethargic[8] = '"At about that time I was cleaning the room when I noticed victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
     lethargic[9] = '"At about that time I was trying to pay victimName a visit, and when I got to the door, I realized it was unlocked. I walked in, and saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
-    lethargic[10] = '"At about that time I was The cleaning staff alerted me of the situation, and when I went to investigate, I saw victim on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
+    lethargic[10] = '"At about that time the cleaning staff alerted me of a situation, and when I went to investigate, I saw victim on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
     #below is the sacred parrot, what say you?
     lethargic[11] = "parrot"
     lethargic[12] = '"At about that time I was putting the baby down for a nap when I heard this abhorrent screech. I walked downstairs to investigate and saw victimName on the ground…  It was almost surreal… Did you need more information? Sorry, I’m not much for conversations…”'
@@ -90,7 +90,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     narc = [0 for x in range(amt)]
     narc[0] = '"At about that time I was walking towards my new condominium! It’s just around the corner, and you literally could not find a better place to live! It’s close to transportation, park areas, restaurants, bars, you name it, it’s got it! I’m so good at home-searching. Anyways, I saw victimName lying on the ground right after I updated my snapchat, and it scared me half to death."'
     narc[1] = '"At about that time I was walking towards my new apartment! You literally could not find a better place to live! It’s close to transportation, park areas, restaurants, bars, you name it, it’s got it! I’m so good at home-searching. Anyways, I saw victimName lying on the ground right after I updated my snapchat, and it scared me half to death."'
-    narc[2] = '"At about that time I was Walking around in the neighborhood. I was considering living here a couple years ago, but after I saw victimName lying on the ground, it’s clear I made the right choice!  Good thing I’m so good at home-searching…"'
+    narc[2] = '"At about that time I was walking around in the neighborhood. I was considering living here a couple years ago, but after I saw victimName lying on the ground, it’s clear I made the right choice!  Good thing I’m so good at home-searching…"'
     narc[3] = '"At about that time I was walking towards the new laundromat because I love supporting my local businesses! I’m much more socially-conscious than other people, clearly. Anyways, I saw victimName lying on the ground, and I was scared nearly half to death!"'
     narc[4] = '"At about that time I was keeping tabs on my underlings, I mean employees. When I making my rounds, however, I stumbled upon victimName’s body. It scared me half to death!"'
     narc[5] = '"At about that time I wasprocessing the outgoing shipments when I heard a loud noise. I went over to investigate and I stumbled upon victimName’s body. It scared me half to death!"'
@@ -101,7 +101,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     narc[10] = '"At about that time I was checking the room after cleaning staff alerted me of the situation and I saw victimName lying on the ground! Simply horrifying!"'
     #below is the sacred parrot, what say you?
     narc[11] = "parrot"
-    narc[12] = '"At about that time I was putting the baby down for a nap when I heard this absolutely horrendous screech. I walked downstairs to investigate and saw victimName on the ground! It was horrifying, dastardly! How dare they, with me- I mean the baby!"'
+    narc[12] = '"At about that time I was putting the baby down for a nap when I heard this absolutely horrendous screech. I walked upstairs to investigate and saw victimName on the ground! It was horrifying, dastardly! How dare they, with me- I mean the baby!"'
     narc[13] = '"At about that time I was  just relaxing on my front porch when I heard a noise from victimName’s house. I walked over to investigate like the good neighbor I am and found that the front door was unlocked. When I walked in, I saw victimName on the ground. I was horrifying!"'
     narc[14] = '"At about that time I was in town for the week and staying with victimName. I heard a loud noise and courageously walked downstairs to investigate when I saw victimName on the ground- simply horrendous!”'
     narc[15] = '"At about that time I was I was relaxing in the living room when I heard a loud scream. I bravely walked towards the sound to investigate and I saw victimName on the ground. It was horrifying!”'
@@ -111,8 +111,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     promiscuousA[1] = "was a jittery mess"
     promiscuousA[2] = "was like some slow turtle"
     promiscuousA[3] = "didn't seem to be right in the head"
-    promiscuousA[4] = "was checking himself in the mirror"
-    promiscuousA[5] = "was hot but too serious for my taste"
+    promiscuousA[4] = "was checking him/herself in the mirror"
     
     anxiousA = [0 for x in range(amt)]
     anxiousA[0] = "T-they seemed a bit mature, but I don’t know."
@@ -120,7 +119,6 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     anxiousA[2] = "Umm, they didn’t seem very lively..."
     anxiousA[3] = "H-he seemed a bit off, but I’m not sure."
     anxiousA[4] = "M-maybe they checked their phone?"
-    anxiousA[5] = "H-he didn’t seem real..."
     
     dimwitA = [0 for x in range(amt)]
     dimwitA[0] = "looked really hot"
@@ -128,15 +126,13 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     dimwitA[2] = "seemed kinda slow"
     dimwitA[3] = "DIMWIT AAAA"
     dimwitA[4] = "were checking their phone all the time"
-    dimwitA[5] = "didn't really show any feelings"
     
     lethargicA = [0 for x in range(amt)]
-    lethargicA[0] = "I think they had a hooded gaze..."
+    lethargicA[0] = "I think they had a seductive gaze..."
     lethargicA[1] = "They seemed a bit fidgety,"
     lethargicA[2] = "LETHARGIC AAAA"
     lethargicA[3] = "They looked as if were lost..."
     lethargicA[4] = "I think they took a moment to check their phone,"
-    lethargicA[5] = "They seemed rather disinterested..."
     
     narcA = [0 for x in range(amt)]
     narcA[0] = "Their clothes seemed rather complementing, but my legs look better of course!"
@@ -144,7 +140,6 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     narcA[2] = "he/she moved so slowly! It was pretty strange."
     narcA[3] = "With the way they stumbled, I almost felt bad for them!"
     narcA[4] = "NARC AAAA"
-    narcA[5] = " I think they were awake? I don’t really know I was checking my phone."
     
     #leave this at the bottom, please!
     counter = -1

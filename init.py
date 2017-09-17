@@ -8,8 +8,8 @@ import random, intro, routine, archetypeInit
 #Randomize values
 random.seed()
 
-# Creates a list containing 6 lists, each of 16 items, all set to ""
-w = 6
+# Creates a list containing 5 lists, each of 16 items, all set to ""
+w = 5
 h = 16
 mapJobs = [["" for x in range(w)] for y in range(h)] 
 mapQ1 = [["" for x in range(w)] for y in range(h)] 
@@ -105,10 +105,15 @@ complicationCount = 2;
 complications = ("wrong weapon", "wrong location", "wrong identity", "missing evidence", "planted evidence", "suspect gone")
 #Suspects
 suspects = [genSuspect(),genSuspect(),genSuspect(),genSuspect()]
+murderer = random.choice(suspects)
 #Investigation days
 daysLeft = 3
 
+currentItem = ""
+if random.choice((True, True, False)):
+    currentItem = routine.leaveItem(murderer)
+
 intro.intro(murderVictim, month, day, murderWeapon, murderLocation, murderHour, murderTOD)
 while daysLeft > 0:
-    routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim)
+    routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, currentItem)
     daysLeft -= 1
