@@ -62,7 +62,7 @@ class suspect():
     
 def genSuspect():
     name = genName()
-    archetype = 3 #random.randint(0,w-1)
+    archetype = random.randint(0,w-1)
     job = jobList.pop(random.randint(0,len(jobList)-1))
     gender = random.choice(("M","F"))
     timeFound = murderHour + random.randint(1,3)
@@ -109,4 +109,6 @@ suspects = [genSuspect(),genSuspect(),genSuspect(),genSuspect()]
 daysLeft = 3
 
 intro.intro(murderVictim, month, day, murderWeapon, murderLocation, murderHour, murderTOD)
-routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim)
+while daysLeft > 0:
+    routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim)
+    daysLeft -= 1

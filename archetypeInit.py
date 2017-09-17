@@ -151,7 +151,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         mapJobs[counter][0] = s + promiscuous[counter]
         
         #Lethargic
-        s = 'name walks into your office slowly, stopping to stretch and yawn. They blink around, dazed, until they eventually make their way to your desk. "Good evening/morning/afternoon... Why am I here again? Oh, right... the murder...Let’s see...It was around timeFound ..."'
+        s = 'name walks into your office slowly, stopping to stretch and yawn. They blink around, dazed, until they eventually make their way to your desk. "Good afternoon... Why am I here again? Oh, right... the murder...Let’s see...It was around timeFound ..."'
         mapJobs[counter][2] = s + lethargic[counter]
         
         #DimWit
@@ -159,7 +159,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         mapJobs[counter][3] = s + dimwit[counter]
         
         #Narc
-        s = 'name walks into your office with a confident stride, taking a moment to glance in a window and flip his/her bangs to the side. They take a seat on a nearby couch, engrossed with their phone until one of your assistants directs them to your desk. “Good evening/morning/afternoon. My name is name and it’s your pleasure to meet me!” As he/she chuckles at his/her joke, you stare, unamused. “Anyways, let’s talk about the murder. It was around timeFound."'
+        s = "name walks into your office with a confident stride, taking a moment to glance in a window and flip his/her bangs to the side. They take a seat on a nearby couch, engrossed with their phone until one of your assistants directs them to your desk. “Good afternoon. I'm name and it’s your pleasure to meet me!” As he/she chuckles at his/her joke, you stare, unamused. “Anyways, let’s talk about the murder. It was around timeFound.”"
         mapJobs[counter][4] = s + lethargic[counter]
         
     counter = -1
