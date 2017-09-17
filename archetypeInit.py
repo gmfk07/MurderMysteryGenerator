@@ -8,6 +8,26 @@ import random
 
 def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     amt = 16
+    
+    promiscuous = [0 for x in range(amt)]
+    promiscuous[0] = "walking home from the salon, when I found a body"
+    promiscuous[1] = "taking out the disgusting trash from my apartment when I smelt this rotting smell. When I went to investigate, I saw a body."
+    promiscuous[2] = "going for my nightly jog when I saw a body."
+    promiscuous[3] = "after a day of cleaning some clothes I saw a body."
+    promiscuous[4] = "getting ready to go home after a long day at the warehouse when I saw a body."
+    promiscuous[5] = "polishing my nails late at work when I saw a body."
+    promiscuous[6] = "doing my late night shift when I saw a faint figure in the distance and upon investigation stumbled across a body."
+    promiscuous[7] = "messing around with the forklift late at night when I saw a body."
+    promiscuous[8] = "cleaning my body because I thought I smelt bad when I realized there was a rotting corpse next door!"
+    promiscuous[9] = "knocking on the door of my neighbor to give him my daily… gift… when I found out [he/she] was dead. Shame."
+    promiscuous[10] = "pleasuring this handsome fellow by the front door, when I got a call reporting a terrible smell upstairs. I went up there and found victimName, and let me tell you hun, that corpse was not a pleasant sight."
+    promiscuous[11] = "*squack*...*squack*...*squACK**SQUACK**man/woman**SQUACK**SQuack**squack*...*squack*..."
+    promiscuous[12] = "cleaning victimName’s clothes when I saw him/her lying like a hot pancake on the floor."
+    promiscuous[13] = "doing my daily jiggle in front of the TV when I smelt that horrific smell. I broke into my neighbor’s house and found his/her cute body lying dead in front of his/her computer screen."
+    promiscuous[14] = "heading over to victimName’s house for the weekly bang and clang but turns out he/she died."
+    promiscuous[15] = "on my way back from the groceries and started preparing some asparagus for my love. Eventually, I… *sobs*... I found victimName lying on my bed naked… dead."
+
+    
     dimwit = [0 for x in range(amt)]
     dimwit[0] = '“Oh! Well, y’see, I was jus’ walking by the alleyway and I saw the dead body. I was on my way to… something… or another, I forgot. In any case, seeing the corpse snapped me out of it.”'
     dimwit[1] = '“Yeah, well, I was trying to get back home. I live in an… what do you call, the big buildings with… an APARTMENT! Yeah, thassit. Anyways, that’s when I stumbled upon the crime scene.”'
@@ -86,6 +106,13 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     anxious[14] = '"I can’t believe this! I just got into town to visit my victimName. And now he/she is gone. How could this happen? ”'
     anxious[15] = '"That’s my husband/wife you’re talking about! And you think it’s MY fault? I know less than you do. What do you expect me to tell you?"'
 
+    promiscuousA = [0 for x in range(amt)]
+    promiscuousA[0] = "looked like a hunk of meat"
+    promiscuousA[1] = "was a jittery mess"
+    promiscuousA[2] = "was like some slow turtle"
+    promiscuousA[3] = "didn't seem to be right in the head"
+    promiscuousA[4] = "was checking himself in the mirror"
+    promiscuousA[5] = "was hot but too serious for my tast"
     
     dimwitA = [0 for x in range(amt)]
     dimwitA[0] = "looked really hot"
@@ -116,26 +143,43 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     for i in mapJobs:
         counter += 1
         
+        # Promiscuous
+        s = "name waltzes into your office showing much of his/her legs; making sure to discreetly reveal just a peek of his/her thick thigh.\n\n"
+        s += '"Why hey there babe, what do you need from me?“ he/she says with a seductive grin.\n\n'
+        s += '"Please stop,” you say.'
+        s += '“Alright sugar. Well at timeFound, I was '
+        mapJobs[counter][0] = s + promiscuous[counter]
+        
+        #Lethargic
         s = 'name walks into your office slowly, stopping to stretch and yawn. They blink around, dazed, until they eventually make their way to your desk. "Good evening/morning/afternoon... Why am I here again? Oh, right... the murder...Let’s see...It was around timeFound ..."'
         mapJobs[counter][2] = s + lethargic[counter]
         
+        #DimWit
         s = "A " + random.choice(("rather lanky", "stout", "twitching")) + " man/woman shuffles into your office, finding a seat quickly. “Heyyy,” says name, “howz’it goin?” You tell them about your investigation and ask them about what they saw the night of the murder. They look at you without blinking for a few seconds, and just as you’re about to repeat yourself, they snap back into it. "
         mapJobs[counter][3] = s + dimwit[counter]
         
+        #Narc
         s = 'name walks into your office with a confident stride, taking a moment to glance in a window and flip his/her bangs to the side. They take a seat on a nearby couch, engrossed with their phone until one of your assistants directs them to your desk. “Good evening/morning/afternoon. My name is name and it’s your pleasure to meet me!” As he/she chuckles at his/her joke, you stare, unamused. “Anyways, let’s talk about the murder. It was around timeFound."'
         mapJobs[counter][4] = s + lethargic[counter]
         
     counter = -1
     for i in mapQ1:
         counter += 1
-            
+          
+          # Promiscuous
+        s = "Oh dear… I believe with all my heart that I saw a weapon!XXX I also found item."
+        mapQ1[counter][0] = s
+        
+        #Lethargic
         s = "Let me see if I can remember what I saw… Maybe a weapon?XXX Maybe an item? I don’t know…"
         mapQ1[counter][2] = s
         
+        #DimWit
         s = "‘Round the body, I saw weapon.XXX And wouldn’t cha know it, I also found item."
         mapQ1[counter][3] = s
         
-         if counter == 5:
+        #Narc
+        if counter == 5:
            s = "Well I was preoccupied with checking my phone for messages- I mean working, but I did see something that looked like weapon.XXX I also saw something that looks like item."  
         elif counter == 8:
            s = "Well I was preoccupied with my phone, but I did see something that looked like weapon.XXX I also saw something that looks like item."
@@ -151,6 +195,11 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     for i in mapQ2:
         counter += 1
         
+        #Promiscuous
+        s = "It was a mighty fine good looking man/woman that archetype"
+        mapQ2[counter][0] = s
+       
+        #Lethargic
         if counter == 6:
             s = "Nobody else was there... XXXI think I saw a man/woman that was about age years old... archetype but they dashed off before I could get a good look...
         if counter == 9:
@@ -159,17 +208,18 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
             s = "Nobody else was there... XXXI think I saw a man/woman...archetype but I didn’t really get a good look"
         mapQ2[counter][2] = s
 
-        
+        #DimWit
         s = "There wasn’t noone else with me, just me and the body.XXX There was someone else there with me… they archetype. I’m purdy sure they were a gender."
         mapQ2[counter][3] = s
         
-         if counter == 6:
+        #Narc
+        if counter == 6:
             s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman... archetype Anyways, I got distracted and they managed to sneak away."
-         elif counter == 8:
+        elif counter == 8:
             s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman in the hallway...archetype" 
-         elif counter == 9:
+        elif counter == 9:
             s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman in the hallway...archetype"
-         else:
+        else:
             s = "Nobody else was there... XXXIt was hard to make out, but I think I saw a man/woman... archetype"
         mapQ2[counter][4] = s
     
@@ -177,6 +227,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     for i in mapArchetype:
         counter += 1
         
+        mapArchetype[counter][0] = promiscuousA[counter]
         mapArchtype[counter][2] = lethargicA[counter]
         mapArchetype[counter][3] = dimwitA[counter]
         mapArchetype[counter][4] = narcA[counter]
