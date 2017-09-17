@@ -6,7 +6,6 @@ Created on Sat Sep 16 22:51:28 2017
 """
 import random
 
-=======
 def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     amt = 16
     dimwit = [0 for x in range(amt)]
