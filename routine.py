@@ -7,7 +7,7 @@ Created on Sat Sep 16 16:38:54 2017
 import random
 
 def whatDo(daysLeft, suspect1, suspect2, suspect3, suspect4, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, currentItem):
-    print("You have " + str(daysLeft) + " days left in your investigation.")
+    print("\nYou have " + str(daysLeft) + " days left in your investigation.")
     print("What will you do today?")
     print("")
     print("1) Question " + suspect1.getName())
@@ -141,8 +141,8 @@ def question(suspect, mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderV
             line3 = line3.partition("XXX")[2]
         print(line3)
         
-def leaveItem(suspect, currentItem):
+def leaveItem(suspect):
     j = suspect.getJob();
-    itemList = ["a to-do list and some footprints", "some keys", "a suspcious-looking to-do list", "some socks", "a fancy uniform", "a screwdriver", "a nightstick and a flashlight", "a vehicle operation manual", "a dustpan", "some feathers", "a pacifier", "a wallet with a picture of the victim", "a ring"]
+    itemList = ["a to-do list and some footprints", "some keys", "a suspicious-looking to-do list", "some socks", "a fancy uniform", "a screwdriver", "a nightstick and a flashlight", "a vehicle operation manual", "a dustpan", "some hotel keys", "some fancy clothes", "some feathers", "a pacifier", "some house keys", "a wallet with a picture of the victim", "a ring"]
     itm = itemList[j]
     return itm

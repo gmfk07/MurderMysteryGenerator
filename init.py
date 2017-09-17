@@ -15,6 +15,7 @@ mapJobs = [["" for x in range(w)] for y in range(h)]
 mapQ1 = [["" for x in range(w)] for y in range(h)] 
 mapQ2 = [["" for x in range(w)] for y in range(h)] 
 mapArchetype = [[""for x in range(w)] for y in range(w)]
+arcList = [0,1,2,3,4]
 
 #Populate mapJobs
 archetypeInit.archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype)
@@ -26,6 +27,7 @@ class victim():
         self.trait1 = trait1
         self.trait2 = trait2
         self.age = age
+        self.gender = gender
         
     def getName(self):
         return self.name
@@ -62,7 +64,7 @@ class suspect():
     
 def genSuspect():
     name = genName()
-    archetype = random.randint(0,w-1)
+    archetype = arcList.pop(random.randint(0,len(arcList)-1))
     job = jobList.pop(random.randint(0,len(jobList)-1))
     gender = random.choice(("M","F"))
     timeFound = murderHour + random.randint(1,3)
@@ -109,11 +111,46 @@ murderer = random.choice(suspects)
 #Investigation days
 daysLeft = 3
 
-currentItem = ""
 if random.choice((True, True, False)):
-    currentItem = routine.leaveItem(murderer)
+    initLeave = routine.leaveItem(murderer)
+else:
+    initLeave = ""
+
+if (murderHour > 12):
+    m1 = murderHour - 12
+else:
+    m1 = murderHour
+if (murderHour > 11):
+    m2 = murderHour + 1 - 12
+else:
+    m2 = murderHour + 1
+if (murderHour > 10):
+    m3 = murderHour + 2 - 12
+else:
+    m3 = murderHour + 2
+if (murderHour > 9):
+    m4 = murderHour + 3 - 12
+else:
+    m4 = murderHour + 3
+dictItem = {m1:initLeave, m2:initLeave, m3:initLeave, m4:initLeave} 
+
+for s in suspects:
+    if s != murderer and random.choice((True, False, False)):
+        counter = 1
+        print("WHOOOOOP")
+        while counter <= 3:
+            tm = s.getTime() + counter - 1
+            print(tm)
+            if tm in dictItem:
+                if counter == 1:
+                    firstOne = dictItem[tm]
+                    print('firstone ' + firstOne)
+                else:
+                    if dictItem[tm] == firstOne:
+                        dictItem[tm] = routine.leaveItem(s)
+            counter += 1
 
 intro.intro(murderVictim, month, day, murderWeapon, murderLocation, murderHour, murderTOD)
 while daysLeft > 0:
-    routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, currentItem)
+    routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2, mapArchetype, murderWeapon, murderVictim, murderer, dictItem)
     daysLeft -= 1
