@@ -185,7 +185,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         mapQ1[counter][1] = s
         
         #Lethargic
-        s = '"'+"Let me see if I can remember what I saw… Maybe weapon?"+'"'+"XXX"+'"'+"Maybe an item? I don’t know…"+'"'
+        s = '"'+"Let me see if I can remember what I saw… Maybe weapon?"+'"'+"XXX"+'"'+"Maybe item? I don’t know…"+'"'
         mapQ1[counter][2] = s
         
         #DimWit
