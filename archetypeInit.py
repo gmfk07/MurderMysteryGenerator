@@ -6,7 +6,7 @@ Created on Sat Sep 16 22:51:28 2017
 """
 import random
 
-def archetypeInit(mapJobs, mapQ1):
+def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     amt = 16
     dimwit = [0 for x in range(amt)]
     dimwit[0] = '“Oh! Well, y’see, I was jus’ walking by the alleyway and I saw the dead body. I was on my way to… something… or another, I forgot. In any case, seeing the corpse snapped me out of it.”'
@@ -25,13 +25,19 @@ def archetypeInit(mapJobs, mapQ1):
     dimwit[13] = '"I was walkin’ around the floor I was stayin’ in at the hotel, lookin’ for the pool. I saw a room that was cracked open just a peek, and inside was a dead body. Really spooked me, I tell ya."'
     dimwit[14] = '"I was in the neighborhood and decided to check up on my good ol’ friend, given that they barely ever sleep. But their front door was open, and I got mighty scared, so I tried to find them… and all I could find was their body."'
     dimwit[15] = '"I’m the… victim’s spouse, ayup. I woke up late at night and tried to look for ‘em, just to make sure they weren’t cheatin’ on me or anythin’... and instead, I found ‘em dead. Oh, god, why?!"'
-    
+    dimwitA = [0 for x in range(amt)]
+    dimwitA[0] = "looked really hot"
+    dimwitA[1] = "were real nervous-like"
+    dimwitA[2] = "seemed kinda slow"
+    dimwitA[3] = "DIMWIT AAAA"
+    dimwitA[4] = "were checking their phone all the time"
+    dimwitA[5] = "didn't really show any feelings"
     
     #leave this at the bottom, please!
     counter = -1
     for i in mapJobs:
         counter += 1
-        s = "A " + random.choice(("rather lanky", "stout", "twitching")) + " man/woman shuffles into your office, finding a seat quickly. “Heyyy,” says name, “howz’it goin?” You tell them about your investigation and ask them about what they saw the night of the murder. They look at you without blinking for a few seconds, and just as you’re about to repeat yourself, they snap back into it. "
+        s = "A " + random.choice(("rather lanky", "stout", "twitching")) + " man/woman shuffles into your office, finding a seat quickly. A previous report indicates they claim they found the body at timeFound. “Heyyy,” says name, “howz’it goin?” You tell them about your investigation and ask them about what they saw the night of the murder. They look at you without blinking for a few seconds, and just as you’re about to repeat yourself, they snap back into it. "
         mapJobs[counter][3] = s + dimwit[counter]
         
     counter = -1
@@ -40,3 +46,13 @@ def archetypeInit(mapJobs, mapQ1):
         s = "‘Round the body, I saw weapon.XXX And wouldn’t cha know it, I also found item."
         mapQ1[counter][3] = s
         
+    counter = -1
+    for i in mapQ2:
+        counter += 1
+        s = "There wasn’t noone else with me, just me and the body.XXX There was someone else there with me… they archetype. I’m purdy sure they were a gender."
+        mapQ2[counter][3] = s
+    
+    counter = -1
+    for i in mapArchetype:
+        counter += 1
+        mapArchetype[counter][3] = dimwitA[counter]
