@@ -78,8 +78,8 @@ while True:
         return suspect(name, archetype, job, gender, timeFound)
         
     def genName():
-        firstNames = ["Caelan", "Jean", "Alexis", "Niaz", "Carmen", "Fey", "Cameron", "Morgan", "Sydney", "Tristan", "Yuri", "Inge", "Blaine", "Rene", "Anwar", "Zulema"]
-        lastNames =  ["Hartley", "Hernandez", "Hoyt", "Price", "Goosens", "Oakley", "Leung", "Smith", "Menzies", "Kouriatchev", "Shalhoub", "Bishara"]
+        firstNames = ["Caelan", "Jean", "Alexis", "Niaz", "Carmen", "Fey", "Cameron", "Morgan", "Sydney", "Tristan", "Yuri", "Inge", "Blaine", "Rene", "Anwar", "Zulema", "Reese", "Harley", "Liu", "Ming"]
+        lastNames =  ["Hartley", "Hernandez", "Hoyt", "Price", "Goosens", "Oakley", "Leung", "Smith", "Menzies", "Kouriatchev", "Shalhoub", "Bishara", "Zheng", "Lee"]
         return random.choice(firstNames) + " " + random.choice(lastNames)
     #Day
     mts = "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
@@ -96,7 +96,7 @@ while True:
     t1 = random.choice(("rich", "politician", "average"))
     t2 = random.choice(("friend", "boss child", "good"))
     age = random.randint(23,42)
-    murderVictim = victim("Andrew Hoyt", t1, t2, age, "M")
+    murderVictim = victim(genName(), t1, t2, age, "M")
     murderLocation = random.choice(("alleyway", "warehouse", "hotel room", "house"))
     #Job tracking
     modifier = 0
