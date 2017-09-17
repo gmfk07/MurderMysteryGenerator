@@ -176,4 +176,8 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     counter = -1
     for i in mapArchetype:
         counter += 1
+        
+        mapArchtype[counter][2] = lethargicA[counter]
         mapArchetype[counter][3] = dimwitA[counter]
+        mapArchetype[counter][4] = narcA[counter]
+        
