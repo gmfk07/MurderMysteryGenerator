@@ -5,7 +5,6 @@ Created on Sat Sep 16 22:51:28 2017
 @author: gmfk07
 """
 import random
-#### IMPORTANT NOTE: THERE IS NO STOIC, SHOULD BE CHANGED TO FIT ONLY 5 PERSONALITIES ####
 
 def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
     amt = 16
