@@ -147,7 +147,7 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         s = "name waltzes into your office showing much of his/her legs; making sure to discreetly reveal just a peek of his/her thick thigh.\n\n"
         s += '"Why hey there babe, what do you need from me?“ he/she says with a seductive grin.\n\n'
         s += '"Please stop,” you say.'
-        s += '“Alright sugar. Well at timeFound, I was '
+        s += '“Alright sugar. Well at timeFound, I was'
         mapJobs[counter][0] = s + promiscuous[counter]
         
         #Lethargic
@@ -232,4 +232,3 @@ def archetypeInit(mapJobs, mapQ1, mapQ2, mapArchetype):
         mapArchetype[counter][3] = dimwitA[counter]
         mapArchetype[counter][4] = narcA[counter]
         
-#aaayyyyy
