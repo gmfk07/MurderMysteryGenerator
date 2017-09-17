@@ -4,7 +4,7 @@ Created on Sat Sep 16 16:38:54 2017
 
 @author: gmfk07
 """
-def whatDo(daysLeft, suspect1, suspect2, suspect3, suspect4, mapJobs, mapQ1, mapQ2):
+def whatDo(daysLeft, suspect1, suspect2, suspect3, suspect4, mapJobs, mapQ1, mapQ2, murderWeapon):
     print("You have " + str(daysLeft) + " days left in your investigation.")
     print("What will you do today?")
     print("")
@@ -26,9 +26,9 @@ def whatDo(daysLeft, suspect1, suspect2, suspect3, suspect4, mapJobs, mapQ1, map
             
     print("")
     if x == 2:
-        question(suspect1, mapJobs, mapQ1, mapQ2)
+        question(suspect1, mapJobs, mapQ1, mapQ2, murderWeapon)
         
-def question(suspect, mapJobs, mapQ1, mapQ2):
+def question(suspect, mapJobs, mapQ1, mapQ2, murderWeapon):
     arc = suspect.getArchetype()
     job = suspect.getJob()
     line1 = mapJobs[job][arc]
@@ -67,3 +67,26 @@ def question(suspect, mapJobs, mapQ1, mapQ2):
                 break
         except ValueError:
             print("Invalid number, try again.")
+    
+    if x == 1:
+        extraitem = ""
+        
+        if murderWeapon == "gun":
+            weapon = "a gun"
+        if murderWeapon == "knife":
+            weapon = "a knife"
+        if murderWeapon == "poison":
+            weapon = "some poison"
+        if murderWeapon == "club":
+            weapon = "a club"
+        if murderWeapon == "strangling":
+            weapon = "some rope"
+            
+        line2 = line2.replace("weapon", weapon)
+        if extraitem == "":
+            line2 = line2.partition("XXX")[0]
+        else:
+            line2 = line2.partition("XXX")[0] + line2.partition("XXX")[2]
+        print(line2)
+        
+    

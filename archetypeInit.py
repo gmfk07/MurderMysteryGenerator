@@ -6,7 +6,7 @@ Created on Sat Sep 16 22:51:28 2017
 """
 import random
 
-def archetypeInit(mapJobs):
+def archetypeInit(mapJobs, mapQ1):
     amt = 16
     dimwit = [0 for x in range(amt)]
     dimwit[0] = '“Oh! Well, y’see, I was jus’ walking by the alleyway and I saw the dead body. I was on my way to… something… or another, I forgot. In any case, seeing the corpse snapped me out of it.”'
@@ -33,3 +33,10 @@ def archetypeInit(mapJobs):
         counter += 1
         s = "A " + random.choice(("rather lanky", "stout", "twitching")) + " man/woman shuffles into your office, finding a seat quickly. “Heyyy,” says name, “howz’it goin?” You tell them about your investigation and ask them about what they saw the night of the murder. They look at you without blinking for a few seconds, and just as you’re about to repeat yourself, they snap back into it. "
         mapJobs[counter][3] = s + dimwit[counter]
+        
+    counter = -1
+    for i in mapQ1:
+        counter += 1
+        s = "‘Round the body, I saw weapon.XXX And wouldn’t cha know it, I also found item."
+        mapQ1[counter][3] = s
+        

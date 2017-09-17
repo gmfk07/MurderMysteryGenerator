@@ -16,7 +16,7 @@ mapQ1 = [["" for x in range(w)] for y in range(h)]
 mapQ2 = [["" for x in range(w)] for y in range(h)] 
 
 #Populate mapJobs
-archetypeInit.archetypeInit(mapJobs)
+archetypeInit.archetypeInit(mapJobs, mapQ1)
 
 #mapQ3 = [[0 for x in range(w)] for y in range(h)] 
 class victim():
@@ -58,7 +58,7 @@ class suspect():
     
 def genSuspect():
     name = genName()
-    archetype = random.randint(0,w-1)
+    archetype = 3 #random.randint(0,w-1)
     job = jobList.pop(random.randint(0,len(jobList)-1))
     gender = random.choice(("M","F"))
     return suspect(name, archetype, job, gender)
@@ -100,4 +100,4 @@ suspects = [genSuspect(),genSuspect(),genSuspect(),genSuspect()]
 daysLeft = 3
 
 intro.intro(murderVictim, month, day, murderWeapon, murderLocation, murderHour, murderTOD)
-routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2)
+routine.whatDo(daysLeft, suspects[0], suspects[1], suspects[2], suspects[3], mapJobs, mapQ1, mapQ2, murderWeapon)
